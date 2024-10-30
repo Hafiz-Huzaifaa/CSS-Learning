@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>SMIT Form</title>
+    <style>
+        .button a {
+            text-decoration-line: none;
+        }
+
+
+        .upload-box {
+
+            width: 150px;
+            height: 150px;
+            border: 2px dashed #888;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+            color: #888;
+            float: left;
+
+        }
+
+
+        .upload-box input[type="file"] {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+
+        }
+
+        .instruction {
+
+            list-style-type: none;
+            float: left;
+
+        }
+
+        ol {
+
+            float: left; 
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <center>
+        <img width="80%" src="./Images/SMIT form header.PNG" alt="SMIT Header">
+    </center>
+    <div class="button" align="Center">
+        <button type="button"
+            style="border: 1px solid rgb(43, 193, 43); border-radius: 5px; height: 40px; width: 120px"><a
+                href="./SMIT main page form.HTML">Registration</a></button>
+        <button type="button"
+            style="border: 1px solid rgb(43, 193, 43); border-radius: 5px; height: 40px; width: 130px"><a
+                href="./SMIT ID card form.html">Download ID Card</a></button>
+        <button type="button"
+            style="border: 1px solid rgb(43, 193, 43); border-radius: 5px; height: 40px; width: 120px"><a
+                href="./SMIT Result form.html">Results</a></button>
+    </div><br><br><br>
+
+
+    <form style="margin-left: 450px; margin-right: 330px;" action="" autocomplete="on" method="" Name="login-form"
+        target="_blank">
+        <label for="selectcountry">
+            <font color="blue">Select Country</font>
+        </label>
+        <select id="selectcountry"
+            style="width: 400px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px; " name="country">
+
+            <option value="select country">Select Country</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="turkey">Turkey</option>
+
+        </select>
+
+
+        <label for="selectcity">
+            <font color="blue">Select City</font>
+        </label>
+
+        <select id="selectcity"
+            style="width: 400px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="city">
+
+            <option value="select country">Select Country</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="turkey">Turkey</option>
+
+        </select><br><br>
+
+        <label for="course">
+            <font color="blue">Select course or event</font>
+        </label>
+
+        <select id="course" style="width: 355px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;"
+            name="city">
+
+            <option value="ccna">CCNA</option>
+            <option value="cybersecurity">Cyber Security</option>
+            <option value="awad">Advanced Web Application Development</option>
+            <option value="digitalmarketing">Digital Marketing</option>
+            <option value="graohicdesigning">Graphic Designing</option>
+
+
+        </select>
+
+        <label for="selectcomputerproficiency">
+            <font color="blue">Select your computer proficiency</font>
+        </label>
+
+        <select id="selectcomputerproficiency"
+            style="width: 256px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="city">
+
+            <option value="none">None</option>
+            <option value="begineer">Begineer</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+
+
+        </select><br><br>
+
+
+        <label for="name">
+            <font color="blue">Full Name</font>
+        </label>
+
+        <input type="text" id="name"
+            style="width: 420px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="name">
+        <label for="fname">
+            <font color="blue">Father's Name</font>
+        </label>
+
+        <input type="text" id="fname"
+            style="width: 370px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="fname">
+        <br><br>
+        <label for="email">
+            <font color="blue">Email</font>
+        </label>
+
+        <input type="email" id="email"
+            style="width: 450px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="email">
+
+        <label for="phone">
+            <font color="blue">Phone</font>
+        </label>
+
+        <input type="number" id="cnic"
+            style="width: 422px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;"
+            name="cnic"><br><br>
+        <label for="cnic">
+            <font color="blue">CNIC</font>
+        </label>
+
+        <input type="number" id="cnic"
+            style="width: 450px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="cnic">
+        <label for="fcnic">
+            <font color="blue">Father's CNIC</font>
+        </label>
+
+        <input type="number" id="fcnic"
+            style="width: 369px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;"
+            name="fcnic"><br><br>
+        <label for="dob">
+            <font color="blue">Date of birth</font>
+        </label>
+
+        <input type="date" id="dob"
+            style="width: 410px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="dob">
+        <label for="selectcomputerproficiency">
+            <font color="blue">Select your computer proficiency</font>
+        </label>
+
+        <select id="gender" style="width: 255px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;"
+            name="gender">
+
+            <option value="selectgender">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="advanced">Advanced</option>
+
+
+        </select><br><br>
+
+        <label for="address">
+            <font color="blue">Address</font>
+        </label>
+
+        <input type="number" id="address"
+            style="width: 912px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;" name="address"
+            placeholder="Address"><br><br>
+
+        <label for="qualification">
+            <font color="blue">Last qualification</font>
+        </label>
+
+        <select id="qualification"
+            style="width: 860px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;"
+            name="qualification">
+
+            <option value="lastqualification">Last Qualification</option>
+            <option value="matric">Matric</option>
+            <option value="inter">Intermediate</option>
+            <option value="undergraduate">Under Graduate</option>
+            <option value="graduate">Graduate</option>
+            <option value="masters">Masters</option>
+            <option value="phd">PHD</option>
+            <option value="other">Other</option>
+
+        </select><br><br>
+
+        <label for="laptop">
+            <font color="blue">Do you have a laptop</font>
+        </label>
+
+        <select id="laptop" style="width: 835px; height: 45px; border: 1px solid rgb(43, 193, 43); border-radius: 5px;"
+            name="laptop">
+
+            <option value="doyouhavealaptop">Do you have a laptop</option>
+            <option value="yes">Yes</option>
+            <option value="no">no</option>
+        </select><br><br>
+
+
+        <div>
+
+            <label for="pic">Picture</label><br>
+            <div class="upload-box">
+                + Upload
+                <input type="file">
+            </div>
+
+
+            <div>
+
+                <ul class="instruction">
+                    <li>With white or blue background</li>
+                    <li>File size must be less than 1MB</li>
+                    <li>File type: jpg, jpeg, png</li>
+                    <li>Upload your recent passport size picture</li>
+                    <li>Your Face should be clearly visible without any Glasses</li>
+                </ul>
+
+
+            </div>
+
+        </div><br><br>
+
+
+        <ol><hr>
+            <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best
+                of
+                my knowledge. Further, I will abide by all the established and future regulations and policies of
+                SWIT.
+            </li>
+            <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in
+                any
+                other activity, political or ethical, but learning during my stay in the program.</li>
+            <li>Defiance will render my admission canceled at any point in time.</li>
+            <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+            <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+
+        </ol>
+
+        <br><br><br><br>
+        <input type="button" value="SUBMIT"
+            style="width: 970px; height: 40px; background-color: #3476d9; color: white; border: 2px solid #3668b4; border-radius: 5px; cursor: pointer;">
+
+    </form>
+
+</body>
+
+</html>

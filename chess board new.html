@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chessboard</title>
+    <title>Document</title>
     <style>
         body {
             display: flex;
@@ -13,78 +13,76 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            /* Light gray background */
         }
 
         table {
+
             border-collapse: collapse;
-            outline: 2px solid white; /* Outline around the entire chessboard */
+            /* Remove space between cells */
+            border: 1px solid rgb(110, 133, 72);
+            background-color: rgb(252, 251, 240);
         }
 
         div {
+            
             background-color: rgb(46, 13, 13);
-            padding: 40px;
+            outline: auto;
+            padding: 20px;
+           
         }
 
-        td, th {
-            width: 60px;
-            height: 60px;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 18px;
-            color: #333;
+        td,
+        th {
+            width: 40px;
+            /* Set the width of each square */
+            height: 40px;
+            /* Set the height of each square */
         }
 
         .white {
-            background-color: #ffffff;
-            border: 1px solid white;
+            background-color: white;
         }
 
         .black {
-            background-color: #000000;
-            color: #ffffff;
-            border: 1px solid white;
+            background-color: black;
         }
 
-        .label {
-            background-color: #f0f0f0;
-            font-weight: bold;
-            border: none; /* Remove border from label cells */
+        .label, .top-label, .right-label {
+            color: black;
         }
 
-        /* Rotate the top and right labels without showing borders */
-      .top-label,
-        .right-label {
+        .top-label{
             transform: rotate(180deg);
-            box-shadow: none; /* Remove any shadow around rotated labels */
-    outline: none; /* Ensure no outline is visible */
-    border: none; /* Remove any remaining border */
         }
 
-        @media (max-width: 800px) {
-    .top-label, .right-label {
-        font-size: 0.9em; /* Adjust size for responsiveness */
-    }
+        .right-label{
+            transform: rotate(180deg);
+        }
     </style>
+
+
+
 </head>
 
 <body>
     <div>
         <table>
-            <!-- Top row labels -->
+
             <tr>
-                <th class="label"></th> <!-- Empty top-left corner -->
-                <th class="label top-label">A</th>
-                <th class="label top-label">B</th>
-                <th class="label top-label">C</th>
-                <th class="label top-label">D</th>
-                <th class="label top-label">E</th>
-                <th class="label top-label">F</th>
-                <th class="label top-label">G</th>
-                <th class="label top-label">H</th>
-                <th class="label"></th> <!-- Empty top-right corner -->
+                <th class="label"></th>
+                <th class="top-label">A</th>
+                <th class="top-label">B</th>
+                <th class="top-label">C</th>
+                <th class="top-label">D</th>
+                <th class="top-label">E</th>
+                <th class="top-label">F</th>
+                <th class="top-label">G</th>
+                <th class="top-label">H</th>
+                <th class="label"></th>
+
             </tr>
 
-            <!-- Chessboard rows with side labels -->
             <tr>
                 <th class="label">8</th>
                 <td class="white"></td>
@@ -95,8 +93,11 @@
                 <td class="black"></td>
                 <td class="white"></td>
                 <td class="black"></td>
-                <th class="label right-label">8</th>
+                <th class="right-label">8</th>
+
+
             </tr>
+
             <tr>
                 <th class="label">7</th>
                 <td class="black"></td>
@@ -107,8 +108,10 @@
                 <td class="white"></td>
                 <td class="black"></td>
                 <td class="white"></td>
-                <th class="label right-label">7</th>
+                <th class="right-label">7</th>
+
             </tr>
+
             <tr>
                 <th class="label">6</th>
                 <td class="white"></td>
@@ -119,8 +122,9 @@
                 <td class="black"></td>
                 <td class="white"></td>
                 <td class="black"></td>
-                <th class="label right-label">6</th>
+                <th class="right-label">6</th>
             </tr>
+
             <tr>
                 <th class="label">5</th>
                 <td class="black"></td>
@@ -131,8 +135,10 @@
                 <td class="white"></td>
                 <td class="black"></td>
                 <td class="white"></td>
-                <th class="label right-label">5</th>
+                <th class="right-label">5</th>
+
             </tr>
+
             <tr>
                 <th class="label">4</th>
                 <td class="white"></td>
@@ -143,8 +149,9 @@
                 <td class="black"></td>
                 <td class="white"></td>
                 <td class="black"></td>
-                <th class="label right-label">4</th>
+                <th class="right-label">4</th>
             </tr>
+
             <tr>
                 <th class="label">3</th>
                 <td class="black"></td>
@@ -155,8 +162,10 @@
                 <td class="white"></td>
                 <td class="black"></td>
                 <td class="white"></td>
-                <th class="label right-label">3</th>
+                <th class="right-label">3</th>
+
             </tr>
+
             <tr>
                 <th class="label">2</th>
                 <td class="white"></td>
@@ -167,8 +176,9 @@
                 <td class="black"></td>
                 <td class="white"></td>
                 <td class="black"></td>
-                <th class="label right-label">2</th>
+                <th class="right-label">2</th>
             </tr>
+
             <tr>
                 <th class="label">1</th>
                 <td class="black"></td>
@@ -179,12 +189,12 @@
                 <td class="white"></td>
                 <td class="black"></td>
                 <td class="white"></td>
-                <th class="label right-label">1</th>
+                <th class="label">1</th>
+
             </tr>
 
-            <!-- Bottom row labels -->
             <tr>
-                <th class="label"></th> <!-- Empty bottom-left corner -->
+                <th class="label"></th>
                 <th class="label">A</th>
                 <th class="label">B</th>
                 <th class="label">C</th>
@@ -193,8 +203,15 @@
                 <th class="label">F</th>
                 <th class="label">G</th>
                 <th class="label">H</th>
-                <th class="label"></th> <!-- Empty bottom-right corner -->
+                <th class="label"></th>
+
             </tr>
+
+
+
+
+
+
         </table>
     </div>
 </body>

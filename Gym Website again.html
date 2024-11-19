@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huzaifa Fitness Again</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=DynaPuff:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Tiny5&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(./Images/bg.jpg);
+            background-size: cover;
+            font-family: "Ubuntu", serif;
+            color: white;
+        }
+
+        
+        
+        .header {
+            background: rgba(0, 0, 0, 10);
+            
+            /* Semi-transparent dark background */
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .left {
+            display: inline;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 150px;
+            filter: invert(100%);
+            text-align: center;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 24px;
+            line-height: 20px;
+            display: inline-block;
+            margin: 4px 10px;
+            position: absolute;
+            top: 25px;
+            width: 172px;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 29px auto;
+        }
+
+        .mid ul {
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(170, 159, 159);
+        }
+
+        .right {
+    display: inline-block;
+    position: absolute;
+    right: 120px;
+    top: 33px;
+}
+
+.right #btn-right {
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    
+    
+}
+
+  
+        .btn {
+            margin: 3px 14px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid #fffefe;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: "Ubuntu", serif;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 183px 193px;
+            padding: 42px 58px;
+            width: 33%;
+            display: block;
+            border-radius: 9px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            text-align: center;
+            border-radius: 9px;
+            display: block;
+            width: 100%;
+            padding: 4px;
+            font-size: 22px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-family: "Ubuntu", serif;
+        }
+
+        .container .btn {
+            width: 100%;
+            margin: 11px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="./Images/logo.png" alt="">
+            <div>Huzaifa Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn" id="btn-right">Register Now</button>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best gym of Karachi now!</h1>
+        <form action="">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your City">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    
+
+
+    
+</body>
+
+</html>

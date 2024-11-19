@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            /* for flex container */
+            min-height: 344px;
+            max-width: 1000px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            /* shorthand */
+            flex-flow: row wrap;
+
+            justify-content: center;
+            /* align-items: flex-start; */
+
+
+
+        }
+
+        .item {
+            width: 100px;
+            background-color: rgb(240, 57, 57);
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            height: 100px;
+        }
+
+        #item-1 {
+            /* order property */
+            /* order: 5; */
+
+            /* flex grow */
+            /* flex-grow: 4;
+
+            /* flex shrink */
+            /* flex-shrink: 2;  */
+
+            /* flex-basis: when direction is set to row then set width other wise set height */
+    /* flex-basis: 320px;    */
+       
+/* flex item shorthand */
+/* flex: 2 2 220px; */
+
+align-self: flex-end;
+        }
+
+        #item-2 {
+            /* order property */
+            /* order: 2; */
+        }
+
+        #item-3 {
+            /* order property */
+            /* order: 4; */
+        }
+
+        #item-4 {
+            /* order property */
+            /* order: 1; */
+
+            /* flex grow */
+            /* flex-grow: 2; */
+        }
+
+        #item-5 {
+            /* order property */
+            /* order: 6; */
+        }
+
+        #item-6 {
+            /* order property */
+            /* order: 3; */
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a Flexbox Tutorial</h1>
+    <div class="container">
+
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+
+
+
+
+    </div>
+</body>
+
+</html>

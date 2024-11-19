@@ -18,7 +18,7 @@
 
 /* Height Variants */
 .h-1 { height: 50px; }      /* Small Height */
-.h-2 { height: 100px; }     /* Medium Height */
+.h-2 { height: 100px; }     /* Medium Height *
 .h-3 { height: 200px; }     /* Large Height */
 .h-4 { height: 300px; }     /* Extra Large Height */
 
@@ -26,4 +26,4 @@
 .w-1 { width: 50px; }       /* Small Width */
 .w-2 { width: 100px; }      /* Medium Width */
 .w-3 { width: 200px; }      /* Large Width */
-.w-4 { width: 300px; }      /* Extra Large Width */
+.w-4 { width: 300px;  }      /* Extra Large Width */

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Form</title>
+    <style>
+        #logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        #top-btn {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #top-btn a {
+            padding: 8px;
+            border: 1px solid rgb(216, 219, 214);
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: rgb(250, 250, 250);
+            color: #0d6db7;
+            margin: 0 5px;
+        }
+
+        form {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 10px;
+        }
+
+        .label {
+            color: #0d6db7;
+            font-weight: bold;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .option, input, select {
+    width: 100%; /* Full width for individual elements */
+    height: 60px; /* Increased height for larger fields */
+    padding: 12px; /* More padding for spacing */
+    font-size: 18px; /* Larger font size */
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgb(95, 206, 67);
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Increased gap between two elements in each row */
+    margin-bottom: 20px; /* Added more margin at the bottom */
+}
+
+.form-field {
+    flex: 1;
+    min-width: 48%;
+    
+
+}
+
+select{
+    width: 100%;
+    height: 60px;
+}
+
+select{
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.container {
+    border: 1px solid black;
+    height: 100vh;
+    padding: 30px 10px;
+}
+
+.upload-box {
+
+width: 150px;
+height: 150px;
+border: 2px dashed #888;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+cursor: pointer;
+font-size: 18px;
+color: #888;
+
+
+
+}
+
+.upload-box input[type="file"] {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="logo"><img src="./Images/saylani.png" alt=""></div>
+    <h1>Registration Form - SMIT</h1>
+    <p>Services - Education - Registration</p>
+
+    <div id="top-btn">
+        <a href="">Registration</a>
+        <a href="">Download ID Card</a>
+        <a href="">Results</a>
+    </div>
+
+    <form action="">
+        <div class="container">
+            <!-- Country and City Selection -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="coun" class="label">Select Country</label>
+                    <select name="coun" id="count" class="option">
+                        <option value="select country">Select Country</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="turkey">Turkey</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="city" class="label">Select City</label>
+                    <select name="city" id="city" class="option">
+                        <option value="select city">Select City</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="istanbul">Istanbul</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Course and Proficiency Selection -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="course" class="label">Select Course or Event</label>
+                    <select name="course" id="course" class="option">
+                        <option value="ccna">CCNA</option>
+                        <option value="cybersecurity">Cyber Security</option>
+                        <option value="awad">Advanced Web Application Development</option>
+                        <option value="digitalmarketing">Digital Marketing</option>
+                        <option value="graphicdesigning">Graphic Designing</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="proficiency" class="label">Computer Proficiency</label>
+                    <select name="proficiency" id="proficiency" class="option">
+                        <option value="none">None</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Name Fields -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="name" class="label">Full Name</label>
+                    <input type="text" id="name" name="name" class="option">
+                </div>
+                <div class="form-field">
+                    <label for="fname" class="label">Father's Name</label>
+                    <input type="text" id="fname" name="fname" class="option">
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" id="email" class="option">
+                </div>
+                <div class="form-field">
+                    <label for="phone" class="label">Phone</label>
+                    <input type="tel" id="phone" class="option">
+                </div>
+            </div>
+
+            <!-- CNIC Information -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="cnic" class="label">CNIC</label>
+                    <input type="number" id="cnic" class="option">
+                </div>
+                <div class="form-field">
+                    <label for="f-cnic" class="label">Father's CNIC (Optional)</label>
+                    <input type="number" id="f-cnic" class="option">
+                </div>
+            </div>
+
+            <!-- Date of Birth and Gender -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="dob" class="label">Date of Birth</label>
+                    <input type="date" id="dob" class="option">
+                </div>
+                <div class="form-field">
+                    <label for="gender" class="label">Gender</label>
+                    <select name="gender" id="gender" class="option">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="address" class="label">Address</label>
+                    <input type="text" id="address" class="option">
+                </div>
+            </div>
+
+            <!-- Last Qualification and Laptop Availability -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="qual" class="label">Last Qualification</label>
+                    <select name="qual" id="qual" class="option">
+                        <option value="Masters">Masters</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Inter">Inter</option>
+                        <option value="Matric">Matric</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="lap" class="label">Do you have a Laptop?</label>
+                    <select name="lap" id="lap" class="option">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                    <label for="">pic</label>
+                    <input type="upload">
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
